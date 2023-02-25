@@ -10,7 +10,7 @@ app.use(express.json())
 app.get('/',(req,res)=>{
     res.send('main page')
 })
-app.use('/api/v1/tasks',taskHandler)
+app.use('/api/tasks',taskHandler)
 app.listen(port,()=>{
     console.log(`App is listening on port ${port}`)
 })
